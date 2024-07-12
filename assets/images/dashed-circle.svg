@@ -1,0 +1,18 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    svg {
+      height: 100px;
+      width: 100px;
+    }
+    circle {
+      /* fill: rgba(255,255,255,0.355); */
+      fill: transparent;
+      stroke: #75FF69;
+      stroke-width: 0.4 ;
+    }
+    .dashed {
+      stroke-dasharray: 2, 2;
+    }
+  </style>
+  <circle cx="50%" cy="50%" r="50%" class="dashed" />
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 120 120" preserveAspectRatio="xMinYMin">
+      <circle cx="40" cy="40" r="24" stroke="#75FF69" stroke-width="0.3" stroke-dasharray="5 5" fill="none"/>
+</svg>
+
+<!-- <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    circle {
+      fill: transparent;
+      stroke: var(--stroke-color, green);
+      stroke-width: 3;
+    }
+    .dashed {
+      stroke-dasharray: var(--dash-width, 8), var(--dash-gap, 8.5);
+    }
+  </style>
+  <circle cx="55" cy="55" r="50" class="dashed" />
+</svg> -->
