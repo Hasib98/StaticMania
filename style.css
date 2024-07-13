@@ -73,6 +73,8 @@ max-height: 2vh;
     /*  40px */
     --fs-900: 3.5rem;
     /*  56px */
+    --fs-1000: 4rem;
+    /*  56px */
 
     --size-100: 0.25rem;
     --size-200: 0.5rem;
@@ -369,3 +371,38 @@ body {
     height: calc(28.84vw * 1.32) ;
 }
 
+.about-us-text-container{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+    
+}
+.about-us{
+    position: absolute;
+    top: 35vh; 
+    font-family: var(--font-small-text);
+    /* font-size: var(--fs-700); */
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--clr-lightgreen);
+}
+
+.about-us-text{
+    font-family: var(--font-large-text);
+    /* font-size: var(--fs-1000); */
+    font-size: 3.5vw;
+    text-transform: capitalize;
+    text-align: center;
+    position: absolute;
+    top: 55vh; 
+    width: 55.7vw;
+    color:  #678784;
+    /* background: #ffffff85; */
+    
+}
+.about-us-text .white-span-text{
+ color:var(--clr-white);
+    
+}
