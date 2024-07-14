@@ -705,7 +705,7 @@ input:focus {
 
 .section-foooter .card-container{
     height: 80%;
-    background-color: var(--clr-lightgreen);
+    background-color: var(--clr-darkgreen);
     display: flex;
     flex-direction: row;
 }
@@ -715,34 +715,21 @@ input:focus {
     height: 100%;
     width: 100%;
     display: flex;
-    align-items: last baseline;
-    justify-content:center;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
 }
 
-.card-container .card:nth-child(1){
-    background: #551f1f;
-    height: 100%;
-    width: 100%;
-}
-.card-container .card:nth-child(2){
-    background: #c93737;
-    height: 100%;
-    width: 100%;
-}
-.card-container .card:nth-child(3){
-    background: #d10707;
-    height: 100%;
-    width: 100%;
-}
+
 
 .card .text{
-
+    color: var(--clr-white);
+    transition: 1s;
 }
 
 
 .text .large-text{
     font-family: var(--font-large-text);
-    color: var(--clr-white);
     font-size: 4vw;
     text-transform: capitalize;
 
@@ -750,7 +737,6 @@ input:focus {
 }
 
 .text .small-text{
-    color: var(--clr-white);
     font-family: var(--font-small-text);
     font-size: 1vw;
     text-transform: lowercase;
@@ -759,15 +745,27 @@ input:focus {
     text-transform: uppercase;
 }
 
-.card .arrow{
+.card .arrow-45deg{
  content: url(assets/icons/arrow.svg);
  rotate: 45deg;
  width: 3vw;
  margin-left: 2vw ;
- /* background: #000; */
+ margin-top: 5vh;
 }
 
 
+.card-container .card:hover{
+    background: var(--clr-lightgreen);
+}
+
+.card:hover .text{
+    color: var(--clr-darkgreen);
+}
+
+/* .card:hover .card .arrow{
+    position: absolute;
+    bottom: 0;
+} */
 
 
 
