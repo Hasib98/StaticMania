@@ -648,7 +648,7 @@ input:focus {
 }
 
 
-.section-lets-talk  .lets-talk-heading-container {
+.section-lets-talk .lets-talk-heading-container {
 
     /* margin-left: 10vw;
     margin-right: 8vw;
@@ -659,9 +659,11 @@ input:focus {
     justify-content: space-between;
     /* background: #000; */
 }
+
 .lets-talk-heading-container .left-column {
-/* background-color: #000; */
+    /* background-color: #000; */
 }
+
 .lets-talk-heading-container .lets-talk-heading {
 
     font-family: var(--font-large-text);
@@ -671,6 +673,7 @@ input:focus {
 
     width: 55.7vw;
 }
+
 .lets-talk-heading-container .lets-talk-description {
     font-family: var(--font-small-text);
     font-size: 1.3vw;
@@ -680,7 +683,7 @@ input:focus {
 .lets-talk-heading-container .lets-talk-btn {
     font-family: var(--font-small-text);
     color: var(--clr-darkgreen);
-    margin-top: 5vh ;
+    margin-top: 5vh;
     border: 1px solid var(--clr-darkgreen);
     border-radius: 50%;
     width: 12vw;
@@ -693,17 +696,17 @@ input:focus {
 }
 
 
-.lets-talk-heading-container .right-column{
+.lets-talk-heading-container .right-column {
     height: 40vh;
 }
 
 /* ----------------section-footer--------------- */
 
-.section-foooter{
+.section-foooter {
     height: 40vh;
 }
 
-.section-foooter .card-container{
+.section-foooter .card-container {
     height: 80%;
     background-color: var(--clr-darkgreen);
     display: flex;
@@ -711,24 +714,26 @@ input:focus {
 }
 
 
-.card-container .card{
+.card-container .card {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: 0.4s;
+    position: relative;
 }
 
 
 
-.card .text{
+.card .text {
     color: var(--clr-white);
-    transition: 1s;
+    transition: 0.4s;
+    /* background: #000; */
 }
 
 
-.text .large-text{
+.text .large-text {
     font-family: var(--font-large-text);
     font-size: 4vw;
     text-transform: capitalize;
@@ -736,36 +741,42 @@ input:focus {
 
 }
 
-.text .small-text{
+.text .small-text {
     font-family: var(--font-small-text);
     font-size: 1vw;
     text-transform: lowercase;
 }
-.small-text::first-letter{
+
+.small-text::first-letter {
     text-transform: uppercase;
 }
 
-.card .arrow-45deg{
- content: url(assets/icons/arrow.svg);
- rotate: 45deg;
- width: 3vw;
- margin-left: 2vw ;
- margin-top: 5vh;
+.card .arrow-45deg {
+    content: url(assets/icons/arrow.svg);
+    rotate: 45deg;
+    width: 3vw;
+    margin-left: 2vw;
+    margin-top: 5vh;
+    position: absolute;
+    right: 7vw;
+    transition: 0.2s;
 }
 
 
-.card-container .card:hover{
+.card-container .card:hover {
     background: var(--clr-lightgreen);
 }
 
-.card:hover .text{
+.card:hover .text {
     color: var(--clr-darkgreen);
 }
 
-/* .card:hover .card .arrow{
-    position: absolute;
-    bottom: 0;
-} */
+.card:hover .arrow-45deg {
+    content: url(assets/icons/arrow2.svg);
+    transform: translate(100%);
+
+    
+}
 
 
 
@@ -776,24 +787,20 @@ input:focus {
 
 
 
-.section-foooter .bottom-navigation{
+.section-foooter .bottom-navigation {
     height: 20%;
     background-color: var(--clr-white);
 }
 
-.bottom-navigation .nav-container{
+.bottom-navigation .nav-container {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;;
+    justify-content: space-between;
     width: 50%;
     height: 100%;
     font-family: var(--font-small-text);
     color: var(--clr-darkgreen);
     font-size: 3vh;
     text-transform: capitalize;
-
 }
-
-
-
