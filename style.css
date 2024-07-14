@@ -660,9 +660,9 @@ input:focus {
     /* background: #000; */
 }
 
-.lets-talk-heading-container .left-column {
-    /* background-color: #000; */
-}
+/* .lets-talk-heading-container .left-column {
+    background-color: #000;
+} */
 
 .lets-talk-heading-container .lets-talk-heading {
 
@@ -752,7 +752,7 @@ input:focus {
 }
 
 .card .arrow-45deg {
-    content: url(assets/icons/arrow.svg);
+    content: url(assets/icons/arrow3.svg);
     rotate: 45deg;
     width: 3vw;
     margin-left: 2vw;
