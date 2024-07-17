@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.box-wrapper {
+    position: relative;
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    width: 200px;
+    border: 1px solid #ccc;
+    transition: all 0.9s ease;
+    /* overflow: hidden; */
+}
+
+.hidden-text {
+    display: none;
+}
+
+.box:hover {
+    height: auto;
+    transition: height 0.9s ease;
+}
+
+.box:hover .hidden-text {
+    display: block;
+    margin-top: 10px;
+}
